@@ -108,7 +108,7 @@ customLinks:
 #comment config
 disqus:
   config: false
-  id: disqus_bERYFJaF1Z
+  id: Java__Coder
 
 
 #################################### global configure #######################################
@@ -121,7 +121,7 @@ highlighter: pygments
 title: Tian_dd
 description: Make it easier,smaller!
 theme: midnight
-disqusname: disqus_bERYFJaF1Z
+disqusname: Java__Coder
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes
