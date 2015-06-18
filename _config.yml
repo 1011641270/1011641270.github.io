@@ -3,6 +3,6 @@ baseurl: /blog
 markdown: redcarpet
 safe: false
 highlighter: pygments
-title: Java_Coder
-description: 疯狂的人生不需要解释
+title: Tian_dd
+description: Make it easier,smaller!
 theme: midnight
