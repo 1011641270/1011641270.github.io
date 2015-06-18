@@ -5,7 +5,7 @@ category: 技术
 comments: true
 ---
 
-Spring MVC 3.0 返回JSON数据的方法
+Spring MVC 3.0 返回JSON数据的方法<br>
 1. 直接 PrintWriter 输出<br>
 2. 使用 JSP 视图<br>
 3. 使用Spring内置的支持<br>
@@ -56,5 +56,5 @@ ModelAndView mav = new ModelAndView("jsonView");
 // mav.addObject ...
 return mav;
 ```
-5. 使用 spring-json.jar
+5. 使用 spring-json.jar<br>
 // 就是第4种方法，但是强大的多。。。
