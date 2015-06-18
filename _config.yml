@@ -1,3 +1,8 @@
+
+disqus:
+  config: false
+  id: disqus_bERYFJaF1Z
+
 username: 1011641270
 baseurl: /blog
 markdown: redcarpet
