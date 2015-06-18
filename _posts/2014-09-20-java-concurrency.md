@@ -5,6 +5,7 @@ category: 技术
 comments: true
 ---
 
+![ui-demo](/images/ui_demo.png)
 
 ## 如何创建一个线程
 
