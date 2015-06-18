@@ -1,0 +1,145 @@
+---
+layout: post
+title: java动态代理框架
+category: 技术
+comments: true
+---
+
+## 代码：
+
+```java
+	DynamicProxyInvocationHandler
+ 
+private Object object;
+ private AOPInterceptor aopInterceptor;
+ public DynamicProxyInvocationHandler(Object object,
+   AOPInterceptor aopInterceptor) {
+  super();
+  this.object = object;
+  this.aopInterceptor = aopInterceptor;
+ }
+ /**
+  * 在try中没有异常的情况下try、catch、finally的执行顺序 try --- finally
+          如果try中有异常，执行顺序是try --- catch --- finally
+                     如果try中没有异常并且try中有return这时候正常执行顺序是try ---- finally --- return
+                     如果try中有异常并且try中有return这时候正常执行顺序是try----catch---finally--- return
+                     总之 finally 永远执行！
+  */
+  
+ @Override
+ public Object invoke(Object proxy, Method method, Object[] args)
+   throws Throwable {
+  // TODO Auto-generated method stub
+  try {
+    
+   aopInterceptor.before(method, args);
+   Object returnValue = method.invoke(object, args);
+   aopInterceptor.after(method, args);
+   return returnValue;
+    
+  } catch (Throwable t) {
+   // TODO: handle exception
+      aopInterceptor.afterThrowing(method, args, t);
+      throw t;
+  }
+  finally{
+   aopInterceptor.afterFinally(method, args);
+  }
+ }
+```
+
+```java
+AOPInterceptor
+ 
+ void before (Method method,Object[] args);
+ void after(Method method,Object[] args);
+ void afterThrowing(Method method,Object[] args,Throwable throwable);
+ void afterFinally(Method method,Object[] args);
+```
+
+```java
+DynamicProxyFactory
+<T> T createProxy(Class<T> clazz,T target,AOPInterceptor interceptor);
+```
+
+```java
+DynamicProxyFactoryImpl
+ 
+@SuppressWarnings("unchecked")
+ @Override
+ public <T> T createProxy(Class<T> clazz, T target,
+   AOPInterceptor interceptor) {
+  // TODO Auto-generated method stub
+ InvocationHandler handler = new DynamicProxyInvocationHandler(target, interceptor);
+ return (T)Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(), new Class<?>[] {clazz}, handler); 
+ }
+```
+##测试部分
+
+定义一个拦截器：
+```java
+MyInterceptor
+ 
+@Override
+ public void before(Method method, Object[] args) {
+  // TODO Auto-generated method stub
+  System.out.println("before"+args[0]);
+ }
+ @Override
+ public void after(Method method, Object[] args) {
+  // TODO Auto-generated method stub
+  System.out.println("after");
+ }
+ @Override
+ public void afterThrowing(Method method, Object[] args, Throwable throwable) {
+  // TODO Auto-generated method stub
+  System.out.println("afterThrowing");
+ }
+ @Override
+ public void afterFinally(Method method, Object[] args) {
+  // TODO Auto-generated method stub
+  System.out.println("afterFinally");
+ }
+```
+测试接口：
+```java
+TestService
+public String sayHello (String str);
+public String sayWelcome (String str);
+```
+实现类：
+```java
+TestServiceImpl
+ @Override
+ public String sayHello(String str) {
+  // TODO Auto-generated method stub
+  return "你好"+str;
+ }
+ @Override
+ public String sayWelcome(String str) {
+  // TODO Auto-generated method stub
+  return "欢迎"+str;
+ }
+```
+测试动态代理：
+```java
+TestDynamicProxy
+public static void main(String[] args) {
+  DynamicProxyFactory proxyFactory = new DynamicProxyFactoryImpl();
+  AOPInterceptor interceptor = new MyInterceptor();
+  TestService testServiceProxy = proxyFactory.createProxy(TestService.class, new TestServiceImpl(), interceptor);
+  System.out.println(testServiceProxy.sayHello("TDD"));
+  System.out.println(testServiceProxy.sayWelcome("TDD"));
+ }
+```
+##运行结果：
+
+beforeTDD
+after
+afterFinally
+你好TDD
+beforeTDD
+after
+afterFinally
+欢迎TDD
+
