@@ -1,7 +1,7 @@
 
 disqus:
   config: false
-  id: disqus_bERYFJaF1Z
+  id: minixalpha
 
 username: 1011641270
 baseurl: /blog
@@ -11,4 +11,5 @@ highlighter: pygments
 title: Tian_dd
 description: Make it easier,smaller!
 theme: midnight
-disqusname: disqus_bERYFJaF1Z
+disqusname: minixalpha
+
