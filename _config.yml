@@ -116,7 +116,7 @@ disqus:
 #################################### global configure #######################################
 
 username: 1011641270
-baseurl: /StrayBirds
+baseurl: /blog
 markdown: redcarpet
 safe: false
 highlighter: pygments
