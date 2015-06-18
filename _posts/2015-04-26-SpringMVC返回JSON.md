@@ -25,7 +25,6 @@ Spring MVC 3.0 返回JSON数据的方法<br>
 jackson-mapper-asl-1.6.4.jar
 jackson-core-asl-1.6.4.jar
 // Controller 中 使用：@ResponseBody 标注方法，该方法返回 Java对象（支持复杂对象），MappingJacksonHttpMessageConverter 会将对象转换为 JSON 输出<br>
-
 4. 自定义<br>
 // 以下是实现方法，仅仅是个演示
 // 配置 BeanNameViewResolver
