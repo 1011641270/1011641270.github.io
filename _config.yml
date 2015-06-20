@@ -120,7 +120,7 @@ safe: false
 highlighter: pygments
 title: Tian_dd
 description: Make it easier,smaller!
-theme: midnight
+theme: hack
 disqusname: Tianduoduo
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
