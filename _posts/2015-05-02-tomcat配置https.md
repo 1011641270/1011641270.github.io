@@ -7,7 +7,7 @@ comments: true
 
 1.进入jdk的安装目录，找到bin目录：
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0502/134812_UIsh_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/039.png?raw=true)
 
 2.输入命令：
 
@@ -19,7 +19,7 @@ comments: true
 
 3.保存和生成证书：
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0502/184828_JerG_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/040.png?raw=true)
 
      解释：名字与姓氏这个很重要，目前本地可以为localhost，如果像远程访问的话，可以为互联网可访问的iP地址！
      
@@ -51,7 +51,7 @@ comments: true
 
  https://localhost:8443/IswustServer/getUser?user_id=1
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0502/141307_2JGF_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/041.png?raw=true)
 
 至此，一个简单的https就配置成功了！
           
