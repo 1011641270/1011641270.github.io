@@ -7,11 +7,11 @@ comments: true
 
 ## 1、确保已经安装了mongdb
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0528/220943_Ma0w_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/070.png?raw=true)
 
 ## 2、下载jar包
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0528/221052_Z8kp_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/071.png?raw=true)
 
 <font color="red">注意：列出了两个重要的jar包，其他的hadoop的jar包同样需要！</font>
 
@@ -19,11 +19,11 @@ comments: true
 
 数据格式是这种：
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0528/221314_aole_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/072.png?raw=true)
 
 创建数据库和集合
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0528/221402_0j6o_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/073.png?raw=true)
 
 ## 4、代码实现
 
@@ -218,5 +218,5 @@ comments: true
 ```
 ## 5、运行效果
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0528/221806_ZI6F_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/074.png?raw=true)
 
