@@ -5,7 +5,7 @@ category: 技术
 comments: true
 ---
 
-![ui-demo](http://static.oschina.net/uploads/space/2014/1023/202607_m17k_1863482.jpg)
+![ui-demo](hhttps://github.com/1011641270/blog/blob/gh-pages/images/008.jpg?raw=true)
 
 ```java
 <!--//对hibernate3进行事物的管理 -->
