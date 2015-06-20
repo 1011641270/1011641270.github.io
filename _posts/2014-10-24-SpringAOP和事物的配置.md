@@ -5,7 +5,7 @@ category: 技术
 comments: true
 ---
 
-![ui-demo](hhttps://github.com/1011641270/blog/blob/gh-pages/images/008.jpg?raw=true)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/008.jpg?raw=true)
 
 ```java
 <!--//对hibernate3进行事物的管理 -->
