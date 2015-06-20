@@ -55,11 +55,11 @@ public class JavaSampleAppend {
 
 然后：执行javac，javap指令，得到字节码和指令【这里要注意你的java文件的路径】：
 
-![ui-demo](http://static.oschina.net/uploads/space/2014/1121/174002_jJzW_1863482.jpg)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/019.jpg?raw=true)
 
 然后就可以查看指令了：
 
-![ui-demo](http://static.oschina.net/uploads/space/2014/1121/174303_ajY9_1863482.jpg)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/020.jpg?raw=true)
 
 然后用打开字节码的工具查看编译后的代码：
 
