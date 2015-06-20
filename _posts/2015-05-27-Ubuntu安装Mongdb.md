@@ -18,7 +18,7 @@ comments: true
 ```java
 sudo service mongod start
 ```
-![ui-demo](http://static.oschina.net/uploads/space/2015/0527/183551_IO6T_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/066.png?raw=true)
 
 ## 2、安装Robomongo
 
@@ -26,13 +26,13 @@ sudo service mongod start
  
 ## 3、基本操作
 
-![ui-demo](http://static.oschina.net/uploads/space/2015/0527/184455_aJCQ_1863482.png)
+![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/067.png?raw=true)
  
  这个时候我们连接mongdb图形化操作工具，可以查看：
  
- ![ui-demo](http://static.oschina.net/uploads/space/2015/0527/184530_WMKS_1863482.png)
+ ![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/068.png?raw=true)
  
- ![ui-demo](http://static.oschina.net/uploads/space/2015/0527/184624_ADQS_1863482.png)
+ ![ui-demo](https://github.com/1011641270/blog/blob/gh-pages/images/069.png?raw=true)
 
 <font color="red">注意：默认情况下mongdb的端口是27017，如果我们没有设置数据库的话，默认会建立test数据库。默认数据会保存在/var/lib/mongodb里。</font>
  
